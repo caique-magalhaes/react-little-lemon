@@ -1,0 +1,49 @@
+.banner-content{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 100px;
+}
+
+.banner{
+    background-color: #495E57;
+    height: 270px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.banner-description{
+    padding: 10px;
+    width: 35%;
+}
+.banner-description h1{
+    color: #FACE14;
+    margin-bottom: 5px ;
+}
+.banner-description h3,p {
+    color: #ffffff;
+    margin: 0;
+}
+.banner-description p {
+    margin: 45px 0;
+}
+.banner-description a{
+    width: 120px;
+    background-color: #FACE14;
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.banner-description a:active{
+    background-color: #293531;
+    color: #ffffff;
+}
+
+.banner-content img{
+    width: 300px;
+    height: 280px;
+    border-radius: 8px;
+    margin-top: 35px;
+}

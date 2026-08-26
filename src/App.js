@@ -10,10 +10,12 @@ import Testimonial from './components/Testimonial/Testimonial';
 function App() {
   return (
     <>
+    <div className='wrapper-header'>
       <header>
         <img src={logo} alt='logo' />
       </header>
       <Nav />
+    </div>
         <main>
             <Banner />
             <Highlights />

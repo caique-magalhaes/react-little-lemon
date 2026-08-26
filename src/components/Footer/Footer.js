@@ -1,11 +1,12 @@
 import logo from '../../assets/logo-footer.png'
+import './Footer.css'
+
 export default function Footer(){
     return(
-      <footer>
+      <footer >
             <img width={100} height={100} src={logo} alt="logo" />
-            <div>
-                <h4>Navigation</h4>
-                <ul>
+                <ul className='footer-nav'>
+                    <li><h4>Navigation</h4></li>
                     <li>
                         <a href="#">HOME</a>
                     </li>
@@ -25,10 +26,10 @@ export default function Footer(){
                         <a href="#">LOOK</a>
                     </li>
                 </ul>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <ul>
+                <ul className='footer-contact'>
+                    <li>
+                        <h4>Contact</h4>
+                    </li>
                     <li>
                         <a href="#">ADDRESS</a>
                     </li>
@@ -42,10 +43,8 @@ export default function Footer(){
                         <a href="#">EMAIL</a>
                     </li>
                 </ul>
-            </div>
-            <div>
-                <h4>SOCIAL LINKS</h4>
-                <ul>
+                <ul className='footer-social'>
+                    <h4>SOCIAL LINKS</h4>
                     <li>
                         <a href="#">INSTAGRAM</a>
                     </li>
@@ -53,7 +52,6 @@ export default function Footer(){
                         <a href="#">FACEBOOK</a>
                     </li>
                 </ul>
-            </div>
       </footer>
     )
 }

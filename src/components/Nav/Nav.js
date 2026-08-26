@@ -1,7 +1,8 @@
+import './Nav.css'
 export default function Nav(){
     return(
         <nav>
-            <ul>
+            <ul className="nav-items">
                 <li>
                     <a href="#">HOME</a>
                 </li>

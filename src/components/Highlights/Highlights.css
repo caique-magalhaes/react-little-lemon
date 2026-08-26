@@ -1,0 +1,31 @@
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: minmax(150px, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.highlights_title{
+    display: grid;
+    grid-template-columns: repeat(2,37%);
+    align-items: center;
+    justify-content: end;
+    gap: 175px;
+}
+
+.highlights_title a{
+    background-color: #FACE14;
+    text-align: center;
+    width: 120px;
+    margin-left: 50px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.highlights_title a:active{
+    background-color: #495E57;
+    color: #ffffff;
+}

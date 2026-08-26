@@ -1,0 +1,32 @@
+.card{
+    background-color: #EDEFEE;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px 16px 0 0;
+}
+
+.card img{
+    border-radius: 16px;
+}
+
+.description{
+    padding:20px 10px;
+}
+.description p{
+    color: #333333;
+}
+.description a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.description_title_value{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 90px;
+}
+.description_title_value span{
+    color: #EE9972;
+}

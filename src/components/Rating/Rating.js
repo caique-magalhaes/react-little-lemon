@@ -1,9 +1,13 @@
+import './Rating.css'
+
 export default function Rating(props){
     return(
-        <article>
-            <img src={props.img} alt={`image ${props.name}`} />
+        <article className="rating">
             <h2>{props.rating} / 5</h2>
-            <h3>{props.name}</h3>
+            <div className="rating_img_name">
+                <img src={props.img} alt={`image ${props.name}`} />
+                <h3>{props.name}</h3>
+            </div>
             <p>{props.review}</p>
         </article>
     )
