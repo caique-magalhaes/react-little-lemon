@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 export default function Reservation(){
     const navigate = useNavigate()
     const [availableTimes, dispatch] = useReducer(updateTimes,[],initializeTimes)
+    //Formik and Yup was used to handle field validation.
     const formik = useFormik({
         initialValues:{
             resDate:"",
@@ -36,7 +37,7 @@ export default function Reservation(){
             occasion:Yup.string().required("You must Choose the occasion.")
         })
     })
-
+    //listening for changes in the date selection to retrieve the available time slots for that date
     const handleDateChange = (e) => {
         formik.handleChange(e);
         console.log(e)
