@@ -33,7 +33,7 @@ export default function Reservation(){
             resDate: Yup.date().required("You must choose the date."),
             resTime: Yup.string().required("You must choose the Time."),
             guests: Yup.number().min(1,"You must have at least one table reserved.").max(10,"A maximum of 10 guests allowed.").required("You must choose the number of diners"),
-            occasion:Yup.string().optional()
+            occasion:Yup.string().required("You must Choose the occasion.")
         })
     })
 
@@ -62,7 +62,7 @@ export default function Reservation(){
                         <div className="date-time">
                             <div className="form-field">
                                 <label htmlFor="resDate">Choose Date</label>
-                                <input required className={formik.touched.resDate && !!formik.errors.resDate ? "error-input":"form-field-select"} type="date" id="resDate" name="resDate" {...formik.getFieldProps("resDate")} onChange={handleDateChange} />
+                                <input aria-label="Choose the date" required className={formik.touched.resDate && !!formik.errors.resDate ? "error-input":"form-field-select"} type="date" id="resDate" name="resDate" {...formik.getFieldProps("resDate")} onChange={handleDateChange} />
                                 {formik.touched.resDate && formik.errors.resDate && (
                                     <span className="error-text">{formik.errors.resDate}</span>
                                     )}
@@ -70,8 +70,8 @@ export default function Reservation(){
 
                             <div className="form-field">
                                 <label htmlFor="resTime">Choose time</label>
-                                <select required className={formik.touched.resTime && !!formik.errors.resTime ? "error-input":"form-field-select"} id="resTime" name="resTime" {...formik.getFieldProps("resTime")}>
-                                    <option>Choose time</option>
+                                <select aria-label="Choose the time" required className={formik.touched.resTime && !!formik.errors.resTime ? "error-input":"form-field-select"} id="resTime" name="resTime" {...formik.getFieldProps("resTime")}>
+                                    <option value="">Choose time</option>
                                     {availableTimes?.map((time)=>(<option key={time} value={time}>{time}</option>))}
                                 </select>
                                  {formik.touched.resTime && formik.errors.resTime && (
@@ -82,7 +82,7 @@ export default function Reservation(){
 
                         <div className="form-field">
                         <label htmlFor="guests" >Number of guests</label>
-                            <input required className={formik.touched.guests && !!formik.errors.guests ? "error-input":"form-field-input"} type="number" id="guests" name="guests" placeholder="1" {...formik.getFieldProps("guests")} min="1" max="10" />
+                            <input aria-label="Choose the number of guests" required className={formik.touched.guests && !!formik.errors.guests ? "error-input":"form-field-input"} type="number" id="guests" name="guests" placeholder="1" {...formik.getFieldProps("guests")} min="1" max="10" />
                             {formik.touched.guests && formik.errors.guests && (
                                 <span className="error-text">{formik.errors.guests}</span>
                             )}
@@ -91,18 +91,24 @@ export default function Reservation(){
                         <div className="form-field">
                             <label htmlFor="occasion">Occasion</label>
                                 <select
+                                aria-label="Choose your Occasion"
                                 id="occasion"
                                 name="occasion"
                                 placeholder="Occasion"
-                                className="form-field-select"
+                                className= {formik.touched.occasion && !!formik.errors.occasion ? "error-input":"form-field-select"}
+                                required
                                 {...formik.getFieldProps("occasion")}>
-                                    <option>Occasion</option>
+                                    <option value="">Occasion</option>
+                                    <option value="Standard">Standard</option>
                                     <option value="Birthday">Birthday</option>
                                     <option value="Anniversary">Anniversary</option>
                                 </select>
+                                {formik.touched.occasion && formik.errors.occasion && (
+                                <span className="error-text">{formik.errors.occasion}</span>
+                            )}
                         </div>
 
-                        <button type="submit" className="submit-btn">Make Your reservation</button>
+                        <button aria-label="Make Your Reservation" type="submit" className="submit-btn">Make Your reservation</button>
                     </form>
                 </section>
 

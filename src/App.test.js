@@ -42,6 +42,7 @@ describe("Reservation Form Tests", () => {
     const dateInput = screen.getByLabelText(/choose date/i)
     const guestsInput = screen.getByLabelText(/Number of guests/i)
     const timeInput = screen.getByLabelText(/Choose time/i)
+    const occasionInput = screen.getByLabelText(/Occasion/i)
 
     expect(dateInput).toHaveAttribute("type", "date")
     expect(dateInput).toHaveAttribute("required")
@@ -50,6 +51,7 @@ describe("Reservation Form Tests", () => {
     expect(guestsInput).toHaveAttribute("min", "1")
     expect(guestsInput).toHaveAttribute("max", "10")
     expect(timeInput).toHaveAttribute("required")
+    expect(occasionInput).toHaveAttribute("required")
   })
 
   test("display validation errors when submitting an empty form", async () => {
@@ -64,6 +66,7 @@ describe("Reservation Form Tests", () => {
       expect(screen.getByText(/you must choose the date./i)).toBeInTheDocument();
       expect(screen.getByText(/You must choose the Time./i)).toBeInTheDocument();
       expect(screen.getByText(/You must choose the number of diners/i)).toBeInTheDocument();
+      expect(screen.queryByText(/You must Choose the occasion./i)).toBeInTheDocument()
     });
   });
 });
@@ -103,11 +106,13 @@ describe("Booking Logic & Reducer Tests", () => {
     const dateInput = screen.getByLabelText(/choose date/i)
     const guestsInput = screen.getByLabelText(/Number of guests/i)
     const timeInput = screen.getByLabelText(/Choose time/i)
+    const occasionInput = screen.getByLabelText(/Occasion/i)
     const submitButton = screen.getByRole("button", /make your reservation/i)
 
     fireEvent.change(dateInput, {target: {value: new Date()}})
     fireEvent.change(guestsInput, {target: {value: "2" }})
     fireEvent.change(timeInput, {target: {value: "17:00"}})
+    fireEvent.change(occasionInput, {target: {value: "Standard"}})
     fireEvent.click(submitButton)
 
     //Verify Error disappear
@@ -115,6 +120,7 @@ describe("Booking Logic & Reducer Tests", () => {
       expect(screen.queryByText(/You must choose the date./i)).not.toBeInTheDocument()
       expect(screen.queryByText(/You must choose the Time./i)).not.toBeInTheDocument()
       expect(screen.queryByText(/You must choose the number of diners/i)).not.toBeInTheDocument()
+      expect(screen.queryByText(/You must Choose the occasion./i)).not.toBeInTheDocument()
     })
 
 

@@ -6,7 +6,7 @@ export default function Rating(props){
             <h2>{props.rating} / 5</h2>
             <div className="rating_img_name">
                 <img src={props.img} alt={props.name} />
-                <h3>{props.name}</h3>
+                <h3 className='rating-name'>{props.name}</h3>
             </div>
             <p>{props.review}</p>
         </article>

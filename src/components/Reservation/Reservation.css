@@ -31,7 +31,8 @@ main{
 .reservation h3{
     color: #ffffff;
     font-weight: 400;
-    margin: 10px 0 0 5px;
+    margin: 10px 0 0 10px;
+    font-size: 16pt;
 }
 
 .reservation p{

@@ -26,6 +26,9 @@
     margin: 0;
     font-weight: 400;
 }
+.banner-description h3{
+    font-size: 16pt;
+}
 .banner-description p {
     margin: 25px 0;
 }
