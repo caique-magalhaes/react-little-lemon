@@ -69,7 +69,7 @@ export default function Reservation(){
                             </div>
 
                             <div className="form-field">
-                                <label htmlFor="resTime">Choose time</label>
+                                <label htmlFor="resTime">Choose Time</label>
                                 <select aria-label="Choose the time" required className={formik.touched.resTime && !!formik.errors.resTime ? "error-input":"form-field-select"} id="resTime" name="resTime" {...formik.getFieldProps("resTime")}>
                                     <option value="">Choose time</option>
                                     {availableTimes?.map((time)=>(<option key={time} value={time}>{time}</option>))}
@@ -81,7 +81,7 @@ export default function Reservation(){
                         </div>
 
                         <div className="form-field">
-                        <label htmlFor="guests" >Number of guests</label>
+                        <label htmlFor="guests" >Number Of Guests</label>
                             <input aria-label="Choose the number of guests" required className={formik.touched.guests && !!formik.errors.guests ? "error-input":"form-field-input"} type="number" id="guests" name="guests" placeholder="1" {...formik.getFieldProps("guests")} min="1" max="10" />
                             {formik.touched.guests && formik.errors.guests && (
                                 <span className="error-text">{formik.errors.guests}</span>
@@ -108,7 +108,7 @@ export default function Reservation(){
                             )}
                         </div>
 
-                        <button aria-label="Make Your Reservation" type="submit" className="submit-btn">Make Your reservation</button>
+                        <button aria-label="Make Your Reservation" type="submit" className="submit-btn">Make Your Reservation</button>
                     </form>
                 </section>
 

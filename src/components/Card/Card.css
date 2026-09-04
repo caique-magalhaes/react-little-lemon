@@ -22,6 +22,10 @@
     font-weight: bolder;
 }
 
+.description a:hover{
+    color: #333333;
+}
+
 .description_title_value{
     display: flex;
     justify-content: left;
