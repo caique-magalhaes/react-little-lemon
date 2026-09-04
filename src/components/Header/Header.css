@@ -1,0 +1,35 @@
+.wrapper-header{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+}
+
+.menu-icon{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-icon{
+    display: block;
+    border-right: 2px solid #000000;
+    padding-right: 50px;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 5px;
+    height: 40px;
+  }
+
+  .menu-icon img:active{
+    background-color: #FACE14;
+    text-align: center;
+  }
+}
+

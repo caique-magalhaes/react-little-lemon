@@ -1,25 +1,26 @@
+import { Link } from 'react-router-dom'
 import './Nav.css'
-export default function Nav(){
+export default function Nav(props){
     return(
-        <nav>
+        <nav className={`${props.isNavOpen ? 'display-nav':''}`}>
             <ul className="nav-items">
                 <li>
-                    <a href="#">HOME</a>
+                    <Link to={"/"}>HOME</Link>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
+                    <Link to={"/"}>ABOUT</Link>
                 </li>
                 <li>
-                    <a href="#">MENU</a>
+                    <Link to={"/"}>MENU</Link>
                 </li>
                 <li>
-                    <a href="#">RESERVATIONS</a>
+                    <Link to={"/reservation"}>RESERVATIONS</Link>
                 </li>
                 <li>
-                    <a href="#">ORDERS</a>
+                    <Link to={"/"}>ORDERS</Link>
                 </li>
                 <li>
-                    <a href="#">LOOK</a>
+                    <Link to={"/"}>LOOK</Link>
                 </li>
             </ul>
         </nav>

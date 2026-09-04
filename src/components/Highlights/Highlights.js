@@ -3,12 +3,15 @@ import greek_salad from "../../assets/greek salad.jpg"
 import bruschetta from "../../assets/bruchetta.svg"
 import lemon_dessert from "../../assets/lemon dessert.jpg"
 import './Highlights.css'
+import { Link } from "react-router-dom";
+
+
 export default function Highlights(){
     return(
         <>
             <div className="highlights_title">
                 <h2>This is week special!!</h2>
-                <a href="#">Menu</a>
+                <Link to={"/"}>Menu</Link>
             </div>
             <section className="highlights">
                 <Card title='Greek Salad' image={greek_salad} value='12.99' description = 'A Amazing greek salad' />

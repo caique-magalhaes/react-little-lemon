@@ -1,0 +1,34 @@
+.wrapper-confirmed-booking{
+    background-color: #293531;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.wrapper-confirmed-booking p {
+    margin-bottom: 10px;
+}
+
+.confirmed-booking-container{
+    text-align: center;
+}
+
+.confirmed-booking-container h2, h3{
+    color: #FACE14;
+    font-weight: bolder;
+}
+
+.summary-booking{
+    margin: 20px 0;
+}
+
+.home-btn{
+     background-color: #FACE14;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 40px;
+}

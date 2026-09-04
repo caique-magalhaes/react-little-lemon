@@ -2,29 +2,32 @@
     display: flex;
     justify-content: center;
     padding: 0;
-    gap: 100px;
+    gap: 10px;
+    width: 100%;
 }
 
 .banner{
     background-color: #495E57;
     height: 270px;
-    padding: 20px;
     margin-bottom: 100px;
+    width: 100%;
 }
 .banner-description{
     padding: 10px;
-    width: 35%;
+    width: 50%;
 }
 .banner-description h1{
     color: #FACE14;
     margin-bottom: 5px ;
+    font-weight: 500;
 }
 .banner-description h3,p {
     color: #ffffff;
     margin: 0;
+    font-weight: 400;
 }
 .banner-description p {
-    margin: 45px 0;
+    margin: 25px 0;
 }
 .banner-description a{
     width: 120px;
@@ -34,6 +37,10 @@
     margin: 10px 0;
     padding: 10px;
     border-radius: 8px;
+}
+
+.banner-description a:hover{
+    background-color: #cfad13;
 }
 
 .banner-description a:active{
@@ -46,4 +53,14 @@
     height: 280px;
     border-radius: 8px;
     margin-top: 35px;
+}
+
+@media screen and (max-width:800px) {
+  .banner{
+    margin: 0;
+    padding: 0;
+  }
+    .banner-content img{
+    width: 35%;
+  }
 }

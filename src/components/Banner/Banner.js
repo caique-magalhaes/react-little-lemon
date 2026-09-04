@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import restauranfood from '../../assets/restauranfood.jpg'
 import './Banner.css'
 
@@ -9,10 +10,10 @@ export default function Banner() {
                     <h1>Little Lemon</h1>
                     <h3>Chicago</h3>
                     <p>Step in and enjoy authentic Mediterranean dishes, vibrant flavors, and bright moments. </p>
-                    <a href='#'>Reserve a table</a>
+                    <Link to={"/reservation"}>Reserve a table</Link>
                 </div>
 
-                <img src={restauranfood} alt="waiter image" />
+                <img src={restauranfood} alt="waiter holding a tray" />
 
 
             </article>

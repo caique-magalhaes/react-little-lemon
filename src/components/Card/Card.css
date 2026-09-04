@@ -14,6 +14,7 @@
 }
 .description p{
     color: #333333;
+    margin-bottom: 50px;
 }
 .description a{
     text-decoration: none;
@@ -25,7 +26,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 90px;
+    gap: 50px;
 }
 .description_title_value span{
     color: #EE9972;

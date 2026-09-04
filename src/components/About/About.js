@@ -14,8 +14,8 @@ export default function About(){
                     </p>
                 </div>
                 <div className='image-container'>
-                    <img className='hide-img' src={adrian_mario_a} alt="mario and adrian image" />
-                    <img className='above-img' src={adrian_mario_b} alt="mario and adrian image" />
+                    <img className='hide-img' src={adrian_mario_a} alt="mario and adrian" />
+                    <img className='above-img' src={adrian_mario_b} alt="mario and adrian" />
                 </div>
 
             </article>
