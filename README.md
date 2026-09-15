@@ -1,4 +1,4 @@
-![Tests](https://github.com/caique-magalhaes/react-little-lemon/blob/main/.github/workflows/test.yml/badge.svg)
+![Tests](https://github.com/caique-magalhaes/react-little-lemon/actions/workflows/test.yml/badge.svg)
 
 # Getting Started with Create React App
 
