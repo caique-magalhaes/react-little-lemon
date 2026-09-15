@@ -1,46 +1,37 @@
 ![Tests](https://github.com/caique-magalhaes/react-little-lemon/actions/workflows/test.yml/badge.svg)
 
-# Getting Started with Create React App
+### Little Lemon Restaurant App
+A responsive web application built as the Capstone Project for the Meta Front-End Developer Professional Certificate. The app features an interactive table reservation system complete with real-time form validation and simulated API slot availability.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Live Application](https://react-little-lemon-6i9zfabcd-anthonys-projects-1dd0086d.vercel.app/)
 
-## Available Scripts
+### Key Features
+  * **Interactive Booking System**: Allows users to select dates, time slots, party sizes, and seating preferences.
+  * **Mock API Integration**: Simulates real-time API responses for dynamic table availability based on selected dates.
+  * **Form Validation**: Built using Formik and Yup for client-side user input validation.
+  * **Automated CI/CD**: GitHub Actions pipeline runs automated unit tests on every push, ensuring zero-downtime deployments via Vercel.
 
-### `npm install`
-Once you have downloaded or cloned the project, install the dependencies using `npm install`.
+### Tech Stack
+  * **Frontend**: React, JavaScript (ES6+), HTML5, CSS3
+  * **Form & Validation**: Formik, Yup
+  * **Testing**: Jest, React Testing Library
+  * **CI/CD & Hosting**: GitHub Actions, Vercel
+    
 
-In the project directory, you can run:
+### Clone the repository:
+`git clone https://github.com/caique-magalhaes/react-little-lemon.git`
+`cd react-little-lemon`
 
-### `npm start`
+### Install dependencies:
+`npm install`.
 
-Runs the app in the development mode.\
+### Start the development server:
+`npm start`
+
+Run unit test suite:
+`npm test`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
