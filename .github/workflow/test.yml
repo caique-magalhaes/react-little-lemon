@@ -1,0 +1,27 @@
+name: React CI Test Runner
+
+on:
+  push:
+    branches: [main, master]
+  pull_request: 
+    branches: [main, master]
+  
+  jobs:
+    test:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+
+        - name: Set up Node.js
+          uses: actions/setup-node@v4
+          with:
+            node.js-version: '20'
+            cache: 'npm'
+        
+        - name: Install Dependecies
+          run: npm ci
+
+        - name: Run unit Test
+          run: npm test -- --watchAll=false
