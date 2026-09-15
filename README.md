@@ -3,7 +3,7 @@
 ### Little Lemon Restaurant App
 A responsive web application built as the Capstone Project for the Meta Front-End Developer Professional Certificate. The app features an interactive table reservation system complete with real-time form validation and simulated API slot availability.
 
-![Live Application](https://react-little-lemon-f2pwl2sq4-anthonys-projects-1dd0086d.vercel.app)
+[Live Application](https://react-little-lemon-f2pwl2sq4-anthonys-projects-1dd0086d.vercel.app)
 
 ### Key Features
   * **Interactive Booking System**: Allows users to select dates, time slots, party sizes, and seating preferences.
