@@ -1,10 +1,10 @@
-name: React CI Test Runner
+  name: React CI Test Runner
 
-on:
-  push:
-    branches: [main, master]
-  pull_request: 
-    branches: [main, master]
+  on:
+    push:
+      branches: [main, master]
+    pull_request: 
+      branches: [main, master]
   
   jobs:
     test:
@@ -17,7 +17,7 @@ on:
         - name: Set up Node.js
           uses: actions/setup-node@v4
           with:
-            node.js-version: '20'
+            node-version: '20'
             cache: 'npm'
         
         - name: Install Dependecies
