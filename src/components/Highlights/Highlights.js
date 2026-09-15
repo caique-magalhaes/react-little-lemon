@@ -1,6 +1,6 @@
 import Card from "../Card/Card";
 import greek_salad from "../../assets/greek salad.jpg"
-import bruschetta from "../../assets/bruchetta.svg"
+import bruschetta from "../../assets/bruchetta.jpg"
 import lemon_dessert from "../../assets/lemon dessert.jpg"
 import './Highlights.css'
 import { Link } from "react-router-dom";
