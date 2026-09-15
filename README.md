@@ -20,6 +20,7 @@ A responsive web application built as the Capstone Project for the Meta Front-En
 
 ### Clone the repository:
 `git clone https://github.com/caique-magalhaes/react-little-lemon.git`
+
 `cd react-little-lemon`
 
 ### Install dependencies:
